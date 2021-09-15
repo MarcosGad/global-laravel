@@ -1,0 +1,73 @@
+/* all */
+label{
+    color: #000;
+}
+.start-pages{
+    margin-top: 40px; 
+}
+.card{
+    margin-bottom: 8px;
+}
+
+/* page */
+.borderless td, .borderless th {
+    border: none;
+}
+.add-lang{
+  margin-top: 7px;
+}
+
+
+.step-progressbar {
+    list-style: none;
+    counter-reset: step;
+    display: flex;
+    padding: 0;
+  }
+  .step-progressbar__item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: center;
+    position: relative;
+  }
+  .step-progressbar__item:before {
+    width: 3em;
+    height: 3em;
+    content: counter(step);
+    counter-increment: step;
+    align-self: center;
+    background: #999;
+    color: #fff;
+    border-radius: 100%;
+    line-height: 3em;
+    margin-bottom: 0.5em;
+  }
+  .step-progressbar__item:after {
+    height: 2px;
+    width: calc(100% - 4em);
+    content: "";
+    background: #999;
+    position: absolute;
+    top: 1.5em;
+    left: calc(50% + 2em);
+  }
+  .step-progressbar__item:last-child:after {
+    content: none;
+  }
+  .step-progressbar__item--active:before {
+    background: #000;
+  }
+  .step-progressbar__item--complete:before {
+    content: "✔";
+  }
+
+/* login */
+.body-web{
+    margin-top: 100px;
+}
+
+/* footer */
+.ftco-footer{
+    margin-top: 60px;
+}
